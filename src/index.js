@@ -74,6 +74,13 @@ class NoSleep {
       this.noSleepVideo.pause()
     }
   }
+  delete (){
+    if (this.noSleepVideo)
+    {
+      this.noSleepVideo.parent.removeChild(this.noSleepVideo);
+      this.noSleepVideo = null;
+    }
+  }
 };
 
 module.exports = NoSleep
