@@ -166,18 +166,7 @@ var NoSleep = function () {
         this.noSleepVideo.pause();
       }
     }
-  },
-  {
-    key: 'delete',
-    value: function delete() {
-    if (this.noSleepVideo)
-    {
-      this.noSleepVideo.parent.removeChild(this.noSleepVideo);
-      this.noSleepVideo = null;
-    }
-    }
-  }                        
-  ]);
+  }]);
 
   return NoSleep;
 }();
